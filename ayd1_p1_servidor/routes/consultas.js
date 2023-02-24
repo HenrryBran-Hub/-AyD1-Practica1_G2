@@ -70,4 +70,30 @@ router.get('/getContactosBusqueda/:Telefono',(req, res) => {
     })
 });
 
+//mostrar favoritos
+router.get('/getContactosfavoritos',(req, res) => {
+    let consulta = `SELECT *
+    FROM Contacto WHERE Favorito = true`;
+    mysqlConnection.query(consulta, (err, rows, fields) => {
+        if (!err){
+            res.json(rows);
+        }else {
+            console.log(err);
+        }
+    })
+});
+
+//agregar a favoritos un contacto
+router.put('/favoritoContacto/:id', (req,res) =>{
+    let contacto = "UPDATE Contacto SET Favorito = true"
+    let consulta = contacto + ' WHERE Id = ' + req.params.id;
+    mysqlConnection.query(consulta, (err, rows, fields) => {
+        if (!err){
+            res.json(rows);
+        }else {
+            console.log(err);
+        }
+    })
+});
+
 module.exports = router;
