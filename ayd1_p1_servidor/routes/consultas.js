@@ -31,5 +31,17 @@ router.post('/addContacto', (req,res) =>{
     })
 });
 
+//eliminar un contacto
+router.put('/deleteContacto/:id', (req,res) =>{
+    let contacto = "UPDATE Contacto SET Eliminar = true"
+    let consulta = contacto + ' WHERE Id = ' + req.params.id;
+    mysqlConnection.query(consulta, (err, rows, fields) => {
+        if (!err){
+            res.json(rows);
+        }else {
+            console.log(err);
+        }
+    })
+});
 
 module.exports = router;
