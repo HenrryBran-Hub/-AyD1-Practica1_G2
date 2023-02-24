@@ -44,4 +44,17 @@ router.put('/deleteContacto/:id', (req,res) =>{
     })
 });
 
+//editar un contacto
+router.put('/updateContacto/:id', (req,res) =>{
+    let contacto = "UPDATE Contacto SET Nombres=\'" + req.body.Nombres + "\',Apellidos=\'" + req.body.Apellidos + "\',Telefono=\'" + req.body.Telefono + "\',Correo=\'" + req.body.Correo + "\'"
+    let consulta = contacto + ' WHERE Id = ' + req.params.id;
+    mysqlConnection.query(consulta, (err, rows, fields) => {
+        if (!err){
+            res.json(rows);
+        }else {
+            console.log(err);
+        }
+    })
+});
+
 module.exports = router;
