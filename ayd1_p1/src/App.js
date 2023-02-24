@@ -101,6 +101,15 @@ function App() {
             </div>
           </div>
       </div>
+      <Navbar brand ='Agenda app -> Favoritos'></Navbar>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-7'>
+              <h2 style={{textAlign:'center'}}>Lista de Favoritos</h2>
+              <Favlist userFav={userFav} usersFav={usersFav} setlistUpdatedFav={setlistUpdatedFav}/>
+            </div>
+          </div>
+      </div>
     </Fragment>
   );
 }
