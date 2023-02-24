@@ -96,4 +96,17 @@ router.put('/favoritoContacto/:id', (req,res) =>{
     })
 });
 
+//quitar de favoritos a un contacto
+router.put('/quitarfavoritoContacto/:id', (req,res) =>{
+    let contacto = "UPDATE Contacto SET Favorito = false"
+    let consulta = contacto + ' WHERE Id = ' + req.params.id;
+    mysqlConnection.query(consulta, (err, rows, fields) => {
+        if (!err){
+            res.json(rows);
+        }else {
+            console.log(err);
+        }
+    })
+});
+
 module.exports = router;
