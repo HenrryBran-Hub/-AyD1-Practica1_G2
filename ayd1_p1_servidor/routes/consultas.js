@@ -57,4 +57,17 @@ router.put('/updateContacto/:id', (req,res) =>{
     })
 });
 
+//Buscar contacto
+router.get('/getContactosBusqueda/:Telefono',(req, res) => {
+    let contacto = "SELECT *FROM Contacto WHERE Telefono = "
+    let consulta = contacto + req.params.Telefono + ' AND Eliminar = False '
+    mysqlConnection.query(consulta, (err, rows, fields) => {
+        if (!err){
+            res.json(rows);
+        }else {
+            console.log(err);
+        }
+    })
+});
+
 module.exports = router;
