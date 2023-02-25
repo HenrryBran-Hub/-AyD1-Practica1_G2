@@ -110,6 +110,15 @@ function App() {
             </div>
           </div>
       </div>
+      <Navbar brand ='Agenda app -> Funcion especial Papelera'></Navbar>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-7'>
+              <h2 style={{textAlign:'center'}}>Lista de Contactos Eliminados</h2>
+              <Dellist userDel={userDel} usersDel={usersDel} setlistUpdatedDel={setlistUpdatedDel} setlistUpdated={setlistUpdated}/>
+            </div>
+          </div>
+      </div>
     </Fragment>
   );
 }
