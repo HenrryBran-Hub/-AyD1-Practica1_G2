@@ -97,7 +97,7 @@ function App() {
           <div className='row'>
             <div className='col-7'>
               <h2 style={{textAlign:'center'}}>Lista de Buscador</h2>
-              <Search userSearch = {userSearch} />
+              <Search />
             </div>
           </div>
       </div>
