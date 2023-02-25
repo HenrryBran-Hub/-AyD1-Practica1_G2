@@ -109,4 +109,29 @@ router.put('/quitarfavoritoContacto/:id', (req,res) =>{
     })
 });
 
+//mostrar papelera
+router.get('/getContactosPapelera',(req, res) => {
+    let consulta = `SELECT * FROM Contacto WHERE Eliminar = 1`;
+    mysqlConnection.query(consulta, (err, rows, fields) => {
+        if (!err){
+            res.json(rows);
+        }else {
+            console.log(err);
+        }
+    })
+});
+
+//recuperar el contacto
+router.put('/Recuperar/:id', (req,res) =>{
+    let contacto = "UPDATE Contacto SET Eliminar = false"
+    let consulta = contacto + ' WHERE Id = ' + req.params.id;
+    mysqlConnection.query(consulta, (err, rows, fields) => {
+        if (!err){
+            res.json(rows);
+        }else {
+            console.log(err);
+        }
+    })
+});
+
 module.exports = router;
