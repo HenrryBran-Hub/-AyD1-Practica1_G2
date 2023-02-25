@@ -114,7 +114,7 @@ function App() {
         <div className='container'>
           <div className='row'>
             <div className='col-7'>
-              <h2 style={{textAlign:'center'}}>Lista de Contactos Eliminados</h2>
+              <h2 style={{textAlign:'center'}}>Lista de Contactos Eliminados Agregar texto</h2>
               <Dellist userDel={userDel} usersDel={usersDel} setlistUpdatedDel={setlistUpdatedDel} setlistUpdated={setlistUpdated}/>
             </div>
           </div>
