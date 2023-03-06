@@ -26,3 +26,5 @@ ___
 | Henrry David Bran Velasquez | 201314439 | [Henrry Bran](https://github.com/HenrryBran-Hub) |
 | Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 |
 | Row 3, Column 1 | Row 3, Column 2 | Row 3, Column 3 |
+
+*Para el archivo del modelo conceptual installar Drawio en Visual Studio Code o abrirlo en en esta [Pagina](https://app.diagrams.net/)
