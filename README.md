@@ -22,4 +22,3 @@ GRUPO No.2 ANALISIS Y DISEÑO DE SISTEMAS 1
 ___
 
 |![Henrry Bran](https://github.com/HenrryBran-Hub.png)[Henrry Bran](https://github.com/HenrryBran-Hub) |
-|---|---|
