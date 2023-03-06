@@ -25,6 +25,6 @@ ___
 |----------|----------|----------|
 | Henrry David Bran Velasquez | 201314439 | [Henrry Bran](https://github.com/HenrryBran-Hub) |
 
-$npm int
+$ npm int
 
 *Para el archivo del modelo conceptual installar Drawio en Visual Studio Code o abrirlo en en esta [Pagina](https://app.diagrams.net/)
