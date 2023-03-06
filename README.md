@@ -21,4 +21,8 @@ ___
 GRUPO No.2 ANALISIS Y DISEÑO DE SISTEMAS 1
 ___
 
-|![Henrry Bran](https://github.com/HenrryBran-Hub.png)[Henrry Bran](https://github.com/HenrryBran-Hub) |
+| Nombre | Carnet | Usuario Git |
+|----------|----------|----------|
+| Henrry David Bran Velasquez | 201314439 | [Henrry Bran](https://github.com/HenrryBran-Hub) |
+| Row 2, Column 1 | Row 2, Column 2 | Row 2, Column 3 |
+| Row 3, Column 1 | Row 3, Column 2 | Row 3, Column 3 |
