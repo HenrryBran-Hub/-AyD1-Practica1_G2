@@ -27,5 +27,5 @@ ___
 
 ```javascript
 $ npm int; 
-
+```
 *Para el archivo del modelo conceptual installar Drawio en Visual Studio Code o abrirlo en en esta [Pagina](https://app.diagrams.net/)
